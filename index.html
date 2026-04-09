@@ -12,7 +12,7 @@
             color: #111;
             background-color: #fff;
         }
-        h1, h2 {
+        h1, h2, h3 {
             color: #000;
         }
         h1 {
@@ -26,13 +26,44 @@
             font-size: 0.9em;
             color: #555;
         }
+        ul {
+            margin-top: 0.5em;
+        }
+        table {
+            border-collapse: collapse;
+            width: 100%;
+            margin-top: 0.8em;
+            margin-bottom: 0.8em;
+            font-size: 0.95em;
+        }
+        th {
+            background-color: #f0f0f0;
+            text-align: left;
+            padding: 8px 12px;
+            border: 1px solid #ccc;
+        }
+        td {
+            padding: 8px 12px;
+            border: 1px solid #ccc;
+            vertical-align: top;
+        }
+        tr:nth-child(even) td {
+            background-color: #fafafa;
+        }
+        .highlight-box {
+            background-color: #f5f8ff;
+            border-left: 4px solid #0076ff;
+            padding: 12px 16px;
+            margin: 1em 0;
+            border-radius: 4px;
+        }
     </style>
 </head>
 <body>
 
 <h1>Terms and Conditions</h1>
-<p><strong>Version:</strong> 1.2</p>
-<p><strong>Last updated:</strong> 24 January 2026</p>
+<p><strong>Version:</strong> 1.3</p>
+<p><strong>Last updated:</strong> 9 April 2026</p>
 
 <section>
 <p>
@@ -40,76 +71,188 @@ These Terms and Conditions ("Terms") govern your access to and use of the <stron
 operated by <strong>RIFY PTY LTD</strong> ("Rify", "we", "us", or "our").
 </p>
 <p>
-By accessing or using the App, you agree to be bound by these Terms. If you do not agree, you must not use the App.
+By accessing or using the App, you confirm that you meet the minimum age requirement applicable to your jurisdiction
+(see Section 1), that you have read and understood these Terms, and that you agree to be bound by them.
+If you do not agree, you must not use the App.
 </p>
 </section>
 
+<!-- ============================================================ -->
 <section>
-<h2>1. Eligibility</h2>
+<h2>1. Eligibility and Minimum Age</h2>
+
+<div class="highlight-box">
+<strong>You must meet the minimum age requirement for your country or region to use Rify.</strong>
+We collect your date of birth at sign-up and use it to verify your eligibility.
+If you do not meet the applicable minimum age, you are not permitted to create or hold an account.
+</div>
+
+<h3>1.1 Australia</h3>
 <p>
-You must be at least <strong>16 years old</strong> to use Rify. By using the App, you represent and warrant that you meet this
-requirement and have the legal capacity to enter into these Terms. The App is <strong>not directed at children under 13 years</strong>.
+In accordance with the <em>Online Safety Amendment (Social Media Minimum Age) Act 2024</em> (Cth),
+which came into force on 10 December 2025, <strong>you must be 16 years of age or older to use Rify
+if you are located in Australia.</strong>
+</p>
+<p>
+By creating an account, you represent and warrant that you are aged 16 or over.
+We take reasonable steps to prevent users under 16 from creating or maintaining accounts, including
+collecting and verifying date of birth at sign-up, server-side age validation, and deactivating
+accounts found to belong to users under 16.
+</p>
+<p>
+If you are a parent or guardian and believe a person under 16 has created an account,
+please contact us at <strong>support@rify.com.au</strong> so we can investigate and take appropriate action.
+</p>
+
+<h3>1.2 Minimum Age by Jurisdiction</h3>
+<p>
+For users outside Australia, the following minimum ages apply. Where a jurisdiction imposes an age
+higher than 13, that higher age applies. Where no specific law exists, a default minimum age of 13
+applies, consistent with international baseline standards.
+</p>
+
+<table>
+    <thead>
+        <tr>
+            <th>Country / Region</th>
+            <th>Minimum Age</th>
+            <th>Legal Basis</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>Australia</td>
+            <td><strong>16</strong></td>
+            <td>Online Safety Amendment (Social Media Minimum Age) Act 2024 (Cth)</td>
+        </tr>
+        <tr>
+            <td>European Union</td>
+            <td><strong>16</strong> (or lower if member state has set 13–15)</td>
+            <td>GDPR Art. 8; member state implementation may vary</td>
+        </tr>
+        <tr>
+            <td>United Kingdom</td>
+            <td><strong>13</strong> (with enhanced protections up to age 18)</td>
+            <td>UK GDPR Art. 8; Age Appropriate Design Code (Children's Code)</td>
+        </tr>
+        <tr>
+            <td>United States</td>
+            <td><strong>13</strong></td>
+            <td>COPPA; state laws may impose higher thresholds</td>
+        </tr>
+        <tr>
+            <td>Canada</td>
+            <td><strong>13</strong></td>
+            <td>PIPEDA and provincial equivalents</td>
+        </tr>
+        <tr>
+            <td>Singapore</td>
+            <td><strong>13</strong></td>
+            <td>Personal Data Protection Act 2012 (PDPA)</td>
+        </tr>
+        <tr>
+            <td>Malaysia</td>
+            <td><strong>18</strong></td>
+            <td>Personal Data Protection Act 2010; consent requires legal capacity under Malaysian contract law</td>
+        </tr>
+        <tr>
+            <td>All other countries</td>
+            <td><strong>13</strong> (default)</td>
+            <td>International baseline; local legal advice obtained prior to launch in each new market</td>
+        </tr>
+    </tbody>
+</table>
+
+<p>
+Where a jurisdiction permits a lower minimum age subject to verified parental consent, Rify does not
+currently offer a parental consent mechanism and therefore applies the higher threshold. This table
+will be updated as laws change or as Rify launches in new markets.
+</p>
+
+<h3>1.3 Misrepresentation of Age</h3>
+<p>
+If you provide a false date of birth to circumvent the minimum age requirement, you are in breach of
+these Terms. Rify reserves the right to immediately deactivate any account found to belong to a user
+who does not meet the applicable minimum age, without notice and without liability.
+</p>
+
+<h3>1.4 Legal Capacity</h3>
+<p>
+In addition to the age requirements above, you must have the legal capacity to enter into a binding
+agreement under the laws of your jurisdiction. If you are entering into these Terms on behalf of a
+minor with appropriate parental or guardian consent (where applicable), the consenting adult accepts
+full responsibility for compliance with these Terms.
 </p>
 </section>
 
+<!-- ============================================================ -->
 <section>
 <h2>2. About Rify</h2>
 <p>
-Rify is a location-based platform that allows users to request, share, and access real-time, community-generated information
-about nearby places.
+Rify is a location-based platform that allows users to request, share, and access real-time,
+community-generated information about nearby places.
 </p>
 <p>
-Content shared on Rify may include camera-captured photos, short text-based public service announcements ("PSAs"), and
-location-related metadata. All content is user-generated and provided for informational purposes only.
+Content shared on Rify may include camera-captured photos, short text-based public service announcements
+("PSAs"), and location-related metadata. All content is user-generated and provided for informational
+purposes only.
 </p>
 </section>
 
+<!-- ============================================================ -->
 <section>
 <h2>3. Informational Use Only</h2>
 <p>
-Rify does not guarantee the accuracy, completeness, timeliness, or reliability of any information shared through the App.
-Information may be time-sensitive and may become outdated quickly.
+Rify does not guarantee the accuracy, completeness, timeliness, or reliability of any information shared
+through the App. Information may be time-sensitive and may become outdated quickly.
 </p>
 <p>
-You acknowledge that you must not rely on content in the App for safety-critical, legal, medical, financial, or other
-professional decisions.
+You acknowledge that you must not rely on content in the App for safety-critical, legal, medical,
+financial, or other professional decisions.
 </p>
 <p>
-Rify does not provide emergency services, safety alerts, or hazard notifications. You use the App and act on its content
-entirely at your own risk and discretion.
+Rify does not provide emergency services, safety alerts, or hazard notifications. You use the App and
+act on its content entirely at your own risk and discretion.
 </p>
 </section>
 
+<!-- ============================================================ -->
 <section>
 <h2>4. User Accounts</h2>
 <p>
-Certain features of the App require the creation of a user account. You are solely responsible for maintaining the
-confidentiality of your account credentials and for all activity that occurs under your account.
+Certain features of the App require the creation of a user account. You are solely responsible for
+maintaining the confidentiality of your account credentials and for all activity that occurs under
+your account.
 </p>
 <p>
-You may request deletion of your account using the in-app data deletion request feature or by contacting support.
-Account deletion may result in the removal of associated content, subject to legal, safety, or operational requirements.
+You may request deletion of your account using the in-app data deletion request feature or by
+contacting support. Account deletion may result in the removal of associated content, subject to
+legal, safety, or operational requirements.
 </p>
 <p>
-You agree to notify Rify immediately of any unauthorised use of your account or any other breach of security.
+You agree to notify Rify immediately of any unauthorised use of your account or any other breach
+of security.
 </p>
 </section>
 
+<!-- ============================================================ -->
 <section>
 <h2>5. User Content</h2>
 <p>
-You retain ownership of the content you submit to Rify. By submitting content, you grant Rify a non-exclusive, worldwide,
-royalty-free, sublicensable, and transferable licence to host, store, display, reproduce, distribute, and use your content
-for the purpose of operating, improving, moderating, and promoting the App.
+You retain ownership of the content you submit to Rify. By submitting content, you grant Rify a
+non-exclusive, worldwide, royalty-free, sublicensable, and transferable licence to host, store,
+display, reproduce, distribute, and use your content for the purpose of operating, improving,
+moderating, and promoting the App.
 </p>
 <p>
-This licence continues while your content remains on the App or is otherwise retained for legal, safety, moderation,
-or operational purposes, including after account deletion where applicable.
+This licence continues while your content remains on the App or is otherwise retained for legal,
+safety, moderation, or operational purposes, including after account deletion where applicable.
 </p>
 </section>
 
+<!-- ============================================================ -->
 <section>
-<h2>6. Camera, Location & Permissions</h2>
+<h2>6. Camera, Location &amp; Permissions</h2>
 <p>
 The App requires access to certain device permissions, including precise location and camera access.
 Photo uploads are limited to camera-captured images only.
@@ -118,63 +261,83 @@ Photo uploads are limited to camera-captured images only.
 If you deny required permissions, certain features of the App may not function correctly.
 </p>
 <p>
-Rify may use third-party services, including analytics and advertising providers, to support App functionality.
-Any advertisements displayed will be handled in accordance with our Privacy Policy.
+Rify may use third-party services, including analytics and advertising providers, to support App
+functionality. Any advertisements displayed will be handled in accordance with our Privacy Policy.
 </p>
 </section>
 
+<!-- ============================================================ -->
 <section>
 <h2>7. Acceptable Use</h2>
 <p>
-You agree not to upload, post, or share content that is illegal, fraudulent, misleading, harmful, abusive, harassing,
-threatening, sexually explicit, discriminatory, unsafe, or otherwise objectionable.
+You agree not to upload, post, or share content that is illegal, fraudulent, misleading, harmful,
+abusive, harassing, threatening, sexually explicit, discriminatory, unsafe, or otherwise objectionable.
 </p>
+<p>
+You also agree not to:
+</p>
+<ul>
+<li>Attempt to circumvent age verification or minimum age requirements by any means, including providing
+    a false date of birth or using another person's account</li>
+<li>Create or maintain an account on behalf of a person who does not meet the applicable minimum age</li>
+<li>Use the App in any way that violates applicable local, national, or international law or regulation</li>
+<li>Attempt to gain unauthorised access to the App, its systems, or the accounts of other users</li>
+</ul>
 </section>
 
+<!-- ============================================================ -->
 <section>
 <h2>8. Content Moderation</h2>
 <p>
-Rify reserves the right, at its sole discretion, to remove, restrict, or disable access to content or accounts that violate
-these Terms or applicable law, without prior notice.
+Rify reserves the right, at its sole discretion, to remove, restrict, or disable access to content
+or accounts that violate these Terms or applicable law, without prior notice.
 </p>
 <p>
-While Rify may moderate content, we do not guarantee the review, removal, or response time for any reported content.
+While Rify may moderate content, we do not guarantee the review, removal, or response time for any
+reported content.
 </p>
 </section>
 
+<!-- ============================================================ -->
 <section>
-<h2>9. Account Suspension & Termination</h2>
+<h2>9. Account Suspension &amp; Termination</h2>
 <p>
-Rify may suspend or terminate accounts, restrict access, or remove content if these Terms are breached or if usage poses
-legal, operational, or safety risks.
+Rify may suspend or terminate accounts, restrict access, or remove content if these Terms are breached
+or if usage poses legal, operational, or safety risks. This includes, without limitation, accounts
+found to belong to users who do not meet the applicable minimum age requirement.
 </p>
 </section>
 
+<!-- ============================================================ -->
 <section>
 <h2>10. Availability</h2>
 <p>
-We do not guarantee uninterrupted or error-free access to the App and may modify, suspend, or discontinue features or
-functionality at any time, without notice.
+We do not guarantee uninterrupted or error-free access to the App and may modify, suspend, or
+discontinue features or functionality at any time, without notice.
 </p>
 </section>
 
+<!-- ============================================================ -->
 <section>
 <h2>11. Limitation of Liability</h2>
 <p>
-To the maximum extent permitted by law, Rify and its officers, directors, employees, and agents shall not be liable for any
-direct, indirect, incidental, special, consequential, or punitive damages arising from your use of or inability to use
-the App.
+To the maximum extent permitted by law, Rify and its officers, directors, employees, and agents shall
+not be liable for any direct, indirect, incidental, special, consequential, or punitive damages arising
+from your use of or inability to use the App.
 </p>
 </section>
 
+<!-- ============================================================ -->
 <section>
 <h2>12. Indemnification</h2>
 <p>
-You agree to indemnify, defend, and hold harmless Rify, its officers, directors, employees, and agents from any claims,
-losses, or liabilities arising from your use of the App, your content, or your breach of these Terms.
+You agree to indemnify, defend, and hold harmless Rify, its officers, directors, employees, and agents
+from any claims, losses, or liabilities arising from your use of the App, your content, your breach of
+these Terms, or any misrepresentation of your age or eligibility to use the App.
 </p>
 </section>
 
+<!-- ============================================================ -->
 <section>
 <h2>13. Changes to These Terms</h2>
 <p>
@@ -183,18 +346,22 @@ Continued use of the App after updates constitutes acceptance of the revised Ter
 </p>
 </section>
 
+<!-- ============================================================ -->
 <section>
-<h2>14. Governing Law & Jurisdiction</h2>
+<h2>14. Governing Law &amp; Jurisdiction</h2>
 <p>
 These Terms are governed by and construed in accordance with the laws of the Commonwealth of Australia.
-You agree to submit to the exclusive jurisdiction of the courts of Australia.
+You agree to submit to the exclusive jurisdiction of the courts of Australia, to the extent permitted
+by applicable local law in your jurisdiction.
 </p>
 </section>
 
+<!-- ============================================================ -->
 <section>
 <h2>15. Contact</h2>
 <p>
-For questions or concerns regarding these Terms, contact us at:
+For questions or concerns regarding these Terms, including any matter relating to age eligibility
+or account deactivation, contact us at:
 <br>
 <strong>Email:</strong> support@rify.com.au
 </p>
