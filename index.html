@@ -12,23 +12,11 @@
             color: #111;
             background-color: #fff;
         }
-        h1, h2, h3 {
-            color: #000;
-        }
-        h1 {
-            margin-bottom: 0.2em;
-        }
-        section {
-            margin-bottom: 2em;
-        }
-        footer {
-            margin-top: 4em;
-            font-size: 0.9em;
-            color: #555;
-        }
-        ul {
-            margin-top: 0.5em;
-        }
+        h1, h2, h3 { color: #000; }
+        h1 { margin-bottom: 0.2em; }
+        section { margin-bottom: 2em; }
+        footer { margin-top: 4em; font-size: 0.9em; color: #555; }
+        ul { margin-top: 0.5em; }
         table {
             border-collapse: collapse;
             width: 100%;
@@ -47,12 +35,17 @@
             border: 1px solid #ccc;
             vertical-align: top;
         }
-        tr:nth-child(even) td {
-            background-color: #fafafa;
-        }
+        tr:nth-child(even) td { background-color: #fafafa; }
         .highlight-box {
             background-color: #f5f8ff;
             border-left: 4px solid #0076ff;
+            padding: 12px 16px;
+            margin: 1em 0;
+            border-radius: 4px;
+        }
+        .warning-box {
+            background-color: #fff8e1;
+            border-left: 4px solid #ffc107;
             padding: 12px 16px;
             margin: 1em 0;
             border-radius: 4px;
@@ -62,18 +55,22 @@
 <body>
 
 <h1>Terms and Conditions</h1>
-<p><strong>Version:</strong> 1.1</p>
-<p><strong>Last updated:</strong> 9 April 2026</p>
+<p><strong>Version:</strong> 1.2</p>
+<p><strong>Last updated:</strong> 12 May 2026</p>
 
 <section>
 <p>
-These Terms and Conditions ("Terms") govern your access to and use of the <strong>Rify</strong> mobile application ("App"),
-operated by <strong>RIFY PTY LTD</strong> ("Rify", "we", "us", or "our").
+These Terms and Conditions ("Terms") govern your access to and use of the <strong>Rify</strong> mobile
+application ("App"), operated by <strong>RIFY PTY LTD</strong> ("Rify", "we", "us", or "our").
 </p>
 <p>
-By accessing or using the App, you confirm that you meet the minimum age requirement applicable to your jurisdiction
-(see Section 1), that you have read and understood these Terms, and that you agree to be bound by them.
-If you do not agree, you must not use the App.
+By accessing or using the App, you confirm that you meet the minimum age requirement applicable to your
+jurisdiction (see Section 1), that you have read and understood these Terms, and that you agree to be
+bound by them. If you do not agree, you must not use the App.
+</p>
+<p>
+When we make material changes to these Terms, we will notify you within the App and may require your
+re-acceptance before you can continue using the App.
 </p>
 </section>
 
@@ -83,8 +80,8 @@ If you do not agree, you must not use the App.
 
 <div class="highlight-box">
 <strong>You must meet the minimum age requirement for your country or region to use Rify.</strong>
-We collect your date of birth at sign-up and use it to verify your eligibility.
-If you do not meet the applicable minimum age, you are not permitted to create or hold an account.
+We collect your date of birth at sign-up and use it to verify your eligibility. If you do not meet
+the applicable minimum age, you are not permitted to create or hold an account.
 </div>
 
 <h3>1.1 Australia</h3>
@@ -94,21 +91,21 @@ which came into force on 10 December 2025, <strong>you must be 16 years of age o
 if you are located in Australia.</strong>
 </p>
 <p>
-By creating an account, you represent and warrant that you are aged 16 or over.
-We take reasonable steps to prevent users under 16 from creating or maintaining accounts, including
-collecting and verifying date of birth at sign-up, server-side age validation, and deactivating
-accounts found to belong to users under 16.
+By creating an account, you represent and warrant that you are aged 16 or over. We take reasonable
+steps to prevent users under 16 from creating or maintaining accounts, including collecting and
+verifying date of birth at sign-up, server-side age validation, and deactivating accounts found to
+belong to users under 16.
 </p>
 <p>
-If you are a parent or guardian and believe a person under 16 has created an account,
-please contact us at <strong>support@rify.com.au</strong> so we can investigate and take appropriate action.
+If you are a parent or guardian and believe a person under 16 has created an account, please contact
+us at <strong>support@rify.com.au</strong> so we can investigate and take appropriate action.
 </p>
 
 <h3>1.2 Minimum Age by Jurisdiction</h3>
 <p>
-For users outside Australia, the following minimum ages apply. Where a jurisdiction imposes an age
-higher than 13, that higher age applies. Where no specific law exists, a default minimum age of 13
-applies, consistent with international baseline standards.
+For users outside Australia, the following minimum ages apply. Where a jurisdiction imposes a minimum
+age higher than 13, that higher age applies. Where no specific law applies, a default minimum age of
+13 applies, consistent with international baseline standards.
 </p>
 
 <table>
@@ -146,6 +143,11 @@ applies, consistent with international baseline standards.
             <td>PIPEDA and provincial equivalents</td>
         </tr>
         <tr>
+            <td>New Zealand</td>
+            <td><strong>13</strong></td>
+            <td>Privacy Act 2020 (NZ)</td>
+        </tr>
+        <tr>
             <td>Singapore</td>
             <td><strong>13</strong></td>
             <td>Personal Data Protection Act 2012 (PDPA)</td>
@@ -153,7 +155,7 @@ applies, consistent with international baseline standards.
         <tr>
             <td>Malaysia</td>
             <td><strong>18</strong></td>
-            <td>Personal Data Protection Act 2010; consent requires legal capacity under Malaysian contract law</td>
+            <td>Personal Data Protection Act 2010; consent requires legal capacity</td>
         </tr>
         <tr>
             <td>All other countries</td>
@@ -193,9 +195,17 @@ Rify is a location-based platform that allows users to request, share, and acces
 community-generated information about nearby places.
 </p>
 <p>
-Content shared on Rify may include camera-captured photos, short text-based public service announcements
-("PSAs"), and location-related metadata. All content is user-generated and provided for informational
-purposes only.
+Content on the App includes:
+</p>
+<ul>
+    <li><strong>User Requests:</strong> Questions posted by users about nearby locations (e.g. "Is this café open?"), answered by other users with camera-captured photos.</li>
+    <li><strong>Public Service Announcements (PSAs):</strong> Short text descriptions with camera-captured photos, posted to alert other users to nearby conditions or events.</li>
+    <li><strong>Daily Tasks:</strong> Location-based tasks at nearby points of interest that users can resolve by submitting a photo.</li>
+    <li><strong>Community Requests:</strong> Algorithmically generated, location-relevant questions seeded by Rify at nearby points of interest. These are clearly labelled "Community Request" in the App and are distinguishable from questions posted by individual users.</li>
+</ul>
+<p>
+All user-generated content is provided for informational purposes only. Rify does not curate,
+verify, or endorse any content posted by users.
 </p>
 </section>
 
@@ -203,16 +213,16 @@ purposes only.
 <section>
 <h2>3. Informational Use Only</h2>
 <p>
-Rify does not guarantee the accuracy, completeness, timeliness, or reliability of any information shared
-through the App. Information may be time-sensitive and may become outdated quickly.
+Rify does not guarantee the accuracy, completeness, timeliness, or reliability of any information
+shared through the App. Information may be time-sensitive and may become outdated quickly.
 </p>
 <p>
 You acknowledge that you must not rely on content in the App for safety-critical, legal, medical,
 financial, or other professional decisions.
 </p>
 <p>
-Rify does not provide emergency services, safety alerts, or hazard notifications. You use the App and
-act on its content entirely at your own risk and discretion.
+Rify does not provide emergency services, safety alerts, or hazard notifications. You use the App
+and act on its content entirely at your own risk and discretion.
 </p>
 </section>
 
@@ -225,13 +235,14 @@ maintaining the confidentiality of your account credentials and for all activity
 your account.
 </p>
 <p>
-You may request deletion of your account using the in-app data deletion request feature or by
-contacting support. Account deletion may result in the removal of associated content, subject to
-legal, safety, or operational requirements.
+You agree to notify Rify immediately of any unauthorised use of your account or any other breach
+of security at <strong>support@rify.com.au</strong>.
 </p>
 <p>
-You agree to notify Rify immediately of any unauthorised use of your account or any other breach
-of security.
+You may request deletion of your account using the in-app data deletion request feature in the
+Settings tab, or by contacting us at <strong>support@rify.com.au</strong>. Account deletion may
+result in the removal of associated content, subject to legal, safety, moderation, and operational
+requirements described in these Terms and our Privacy Policy.
 </p>
 </section>
 
@@ -239,30 +250,52 @@ of security.
 <section>
 <h2>5. User Content</h2>
 <p>
-You retain ownership of the content you submit to Rify. By submitting content, you grant Rify a
-non-exclusive, worldwide, royalty-free, sublicensable, and transferable licence to host, store,
-display, reproduce, distribute, and use your content for the purpose of operating, improving,
-moderating, and promoting the App.
+You retain ownership of the content you submit to Rify. By submitting content (including photos,
+text, PSAs, and request responses), you grant Rify a non-exclusive, worldwide, royalty-free,
+sublicensable, and transferable licence to host, store, display, reproduce, distribute, and use
+your content for the purpose of operating, improving, moderating, and promoting the App.
 </p>
 <p>
 This licence continues while your content remains on the App or is otherwise retained for legal,
 safety, moderation, or operational purposes, including after account deletion where applicable.
 </p>
+
+<div class="warning-box">
+<strong>Content visibility after account deletion:</strong> If you submitted a photo in response to
+another user's request, that photo may remain visible to the user who created the request, even after
+your account is deleted. This is because your response forms part of that user's information record.
+If you wish to request removal of specific content, please contact us at
+<strong>support@rify.com.au</strong>.
+</div>
+
+<p>
+You represent and warrant that:
+</p>
+<ul>
+    <li>You own or have the necessary rights to submit your content;</li>
+    <li>Your content does not infringe the intellectual property, privacy, or other rights of any third party;</li>
+    <li>Your content complies with these Terms and all applicable laws.</li>
+</ul>
 </section>
 
 <!-- ============================================================ -->
 <section>
 <h2>6. Camera, Location &amp; Permissions</h2>
 <p>
-The App requires access to certain device permissions, including precise location and camera access.
-Photo uploads are limited to camera-captured images only.
+The App requires access to certain device permissions to function. The key permissions are:
 </p>
+<ul>
+    <li><strong>Camera:</strong> Required to capture and submit photos. The App does not access your device's photo library.</li>
+    <li><strong>Precise Location (GPS):</strong> Required to provide nearby, location-based content and functionality. Without location access, core features of the App will not function.</li>
+    <li><strong>Push Notifications:</strong> Requested at first launch. See Section 9 for details.</li>
+</ul>
 <p>
 If you deny required permissions, certain features of the App may not function correctly.
 </p>
 <p>
-Rify may use third-party services, including analytics and advertising providers, to support App
-functionality. Any advertisements displayed will be handled in accordance with our Privacy Policy.
+For map search functionality, the App uses Apple's mapping services, which may transmit your
+search queries and approximate location to Apple's servers. This is governed by Apple's privacy
+policy, available at <a href="https://www.apple.com/legal/privacy/">apple.com/legal/privacy</a>.
 </p>
 </section>
 
@@ -277,94 +310,398 @@ abusive, harassing, threatening, sexually explicit, discriminatory, unsafe, or o
 You also agree not to:
 </p>
 <ul>
-<li>Attempt to circumvent age verification or minimum age requirements by any means, including providing
-    a false date of birth or using another person's account</li>
-<li>Create or maintain an account on behalf of a person who does not meet the applicable minimum age</li>
-<li>Use the App in any way that violates applicable local, national, or international law or regulation</li>
-<li>Attempt to gain unauthorised access to the App, its systems, or the accounts of other users</li>
+    <li>Submit false, fabricated, or deliberately misleading location information or content;</li>
+    <li>Attempt to circumvent age verification or minimum age requirements by any means, including providing a false date of birth or using another person's account;</li>
+    <li>Create or maintain an account on behalf of a person who does not meet the applicable minimum age;</li>
+    <li>Use the App in any way that violates applicable local, national, or international law or regulation;</li>
+    <li>Attempt to gain unauthorised access to the App, its systems, or the accounts of other users;</li>
+    <li>Use automated tools, bots, or scripts to interact with the App;</li>
+    <li>Engage in any conduct that disrupts or places excessive load on the App's infrastructure;</li>
+    <li>Attempt to reverse engineer, decompile, or extract the source code of the App;</li>
+    <li>Misuse the flagging or reporting system to target or harass other users.</li>
 </ul>
 </section>
 
 <!-- ============================================================ -->
 <section>
-<h2>8. Content Moderation</h2>
+<h2>8. Points, Tiers &amp; Gamification</h2>
+
+<div class="highlight-box">
+<strong>Points, tiers, and streaks within Rify have no monetary value.</strong> They cannot be
+redeemed, transferred, sold, or exchanged for cash, real-world currency, goods, services, or any
+other benefit of tangible value.
+</div>
+
+<p>
+The App includes an in-app engagement system consisting of:
+</p>
+<ul>
+    <li><strong>Points:</strong> Awarded or deducted based on your activity within the App. Points
+    are a measure of participation only and do not represent any form of stored value.</li>
+    <li><strong>Tiers:</strong> Status levels (such as "Beginner I") that reflect your cumulative
+    engagement. Tiers carry no commercial benefit or entitlement to preferential treatment.</li>
+    <li><strong>Streaks:</strong> A record of your consecutive days of activity. Streaks are
+    informational only.</li>
+</ul>
+
+<p>Current point values for actions are:</p>
+<table>
+    <thead>
+        <tr><th>Action</th><th>Points</th></tr>
+    </thead>
+    <tbody>
+        <tr><td>Daily task resolved</td><td>+50</td></tr>
+        <tr><td>User request answered</td><td>+100</td></tr>
+        <tr><td>PSA uploaded</td><td>+75</td></tr>
+        <tr><td>Photo appreciated by request creator</td><td>+10</td></tr>
+        <tr><td>User request created</td><td>−15</td></tr>
+        <tr><td>Photo reported by request creator</td><td>−10</td></tr>
+    </tbody>
+</table>
+
+<p>
+Rify reserves the right to modify point values, tier thresholds, streak logic, or any other aspect
+of the gamification system at any time, without prior notice and without liability to you. Rify may
+also suspend or discontinue the gamification system entirely.
+</p>
+<p>
+Points and tier status do not accumulate any legal right or entitlement and will not be
+compensated upon account closure.
+</p>
+</section>
+
+<!-- ============================================================ -->
+<section>
+<h2>9. Push Notifications</h2>
+<p>
+The App uses Firebase Cloud Messaging (a service provided by Google LLC) to send push notifications
+to your device. You will be asked for permission to receive notifications when you first launch the App.
+</p>
+<p>
+Notification types include:
+</p>
+<ul>
+    <li>Alerts about new user requests or PSAs posted near your location;</li>
+    <li>Confirmation that someone has answered your user request;</li>
+    <li>Notifications that someone has appreciated a photo you submitted.</li>
+</ul>
+<p>
+Notifications about nearby activity are based on your approximate location using a geohash grid.
+Your precise GPS coordinates are not transmitted to other users at any time.
+</p>
+<p>
+You can withdraw your consent to receive push notifications at any time in two ways:
+</p>
+<ul>
+    <li><strong>In-app:</strong> Go to <em>Settings → App Settings</em> within Rify and toggle
+    off "Push Notifications". This immediately unsubscribes your device from all nearby-activity
+    topics and removes your token from our servers.</li>
+    <li><strong>Device Settings:</strong> Adjust the notification permission for Rify in your
+    device's system Settings app under Notifications.</li>
+</ul>
+<p>
+Withdrawing consent will not affect your ability to use the App, but you will no longer receive
+real-time alerts about nearby activity.
+</p>
+</section>
+
+<!-- ============================================================ -->
+<section>
+<h2>10. Advertisements</h2>
+<p>
+Rify is a free App supported by advertising revenue. The App displays advertisements provided by
+<strong>Google Mobile Ads (AdMob)</strong>, a service of Google LLC.
+</p>
+<p>
+All advertisements displayed within the App are <strong>non-personalised</strong>. Rify does not
+use your personal data or behaviour to target advertisements to you, and does not enable
+cross-app or cross-website tracking for advertising purposes.
+</p>
+<p>
+Advertisements may appear:
+</p>
+<ul>
+    <li>As banner ads on various screens within the App;</li>
+    <li>As full-screen interstitial ads at certain natural transition points (such as after submitting a request);</li>
+    <li>As rewarded ads, where available.</li>
+</ul>
+<p>
+The display of advertisements is governed by Google's advertising policies. For information about
+how Google handles data in connection with ads, please refer to
+<a href="https://policies.google.com/privacy">Google's Privacy Policy</a>.
+</p>
+<p>
+Rify does not currently offer an ad-free subscription tier. We reserve the right to introduce such
+an option in the future, subject to separate pricing terms.
+</p>
+</section>
+
+<!-- ============================================================ -->
+<section>
+<h2>11. Third-Party Services</h2>
+<p>
+The App uses the following third-party services to operate and improve its functionality. By using
+the App, you acknowledge that your data may be transmitted to and processed by these providers in
+accordance with their respective terms and privacy policies.
+</p>
+
+<table>
+    <thead>
+        <tr>
+            <th>Service</th>
+            <th>Provider</th>
+            <th>Purpose</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>Firebase Authentication</td>
+            <td>Google LLC</td>
+            <td>User account creation and authentication</td>
+        </tr>
+        <tr>
+            <td>Firebase Firestore</td>
+            <td>Google LLC</td>
+            <td>Cloud database for user profiles and content</td>
+        </tr>
+        <tr>
+            <td>Firebase Storage</td>
+            <td>Google LLC</td>
+            <td>Storage of user-submitted photos and profile images</td>
+        </tr>
+        <tr>
+            <td>Firebase Cloud Functions</td>
+            <td>Google LLC</td>
+            <td>Backend processing for account creation, content submission, and moderation</td>
+        </tr>
+        <tr>
+            <td>Firebase Analytics</td>
+            <td>Google LLC</td>
+            <td>Anonymous app usage analytics</td>
+        </tr>
+        <tr>
+            <td>Firebase Crashlytics</td>
+            <td>Google LLC</td>
+            <td>Crash reporting and app stability monitoring</td>
+        </tr>
+        <tr>
+            <td>Firebase Cloud Messaging</td>
+            <td>Google LLC</td>
+            <td>Delivery of push notifications</td>
+        </tr>
+        <tr>
+            <td>Firebase App Check</td>
+            <td>Google LLC</td>
+            <td>Verification that requests originate from the genuine Rify App</td>
+        </tr>
+        <tr>
+            <td>Google Mobile Ads (AdMob)</td>
+            <td>Google LLC</td>
+            <td>Non-personalised advertising</td>
+        </tr>
+        <tr>
+            <td>CoreLocation / CLGeocoder / MapKit</td>
+            <td>Apple Inc.</td>
+            <td>GPS location, reverse geocoding (address suggestions), and map search</td>
+        </tr>
+        <tr>
+            <td>App Attest</td>
+            <td>Apple Inc.</td>
+            <td>App integrity verification (used with Firebase App Check)</td>
+        </tr>
+        <tr>
+            <td>MapLibre GL Native</td>
+            <td>MapLibre (open source)</td>
+            <td>Map rendering (no data transmitted to MapLibre)</td>
+        </tr>
+        <tr>
+            <td>SDWebImage</td>
+            <td>Open source</td>
+            <td>Image loading and caching (no data transmitted externally)</td>
+        </tr>
+    </tbody>
+</table>
+
+<p>
+Firebase services are subject to Google's
+<a href="https://firebase.google.com/support/privacy">Firebase Privacy and Security terms</a>.
+Apple services are subject to Apple's
+<a href="https://www.apple.com/legal/privacy/">Privacy Policy</a>.
+</p>
+</section>
+
+<!-- ============================================================ -->
+<section>
+<h2>12. Content Moderation</h2>
 <p>
 Rify reserves the right, at its sole discretion, to remove, restrict, or disable access to content
 or accounts that violate these Terms or applicable law, without prior notice.
 </p>
 <p>
+The App includes a community-based flagging system. Users may report content they believe violates
+these Terms. Content that receives a threshold number of reports may be automatically hidden pending
+review. We reserve the right to take further action, including permanent removal and account
+suspension.
+</p>
+<p>
 While Rify may moderate content, we do not guarantee the review, removal, or response time for any
-reported content.
+reported content. Rify is not liable for any harm caused by content that has not yet been reviewed
+or removed.
 </p>
 </section>
 
 <!-- ============================================================ -->
 <section>
-<h2>9. Account Suspension &amp; Termination</h2>
+<h2>13. Account Suspension &amp; Termination</h2>
 <p>
-Rify may suspend or terminate accounts, restrict access, or remove content if these Terms are breached
-or if usage poses legal, operational, or safety risks. This includes, without limitation, accounts
-found to belong to users who do not meet the applicable minimum age requirement.
+Rify may suspend or terminate your account, restrict your access, or remove your content at any
+time and without prior notice if:
 </p>
-</section>
-
-<!-- ============================================================ -->
-<section>
-<h2>10. Availability</h2>
+<ul>
+    <li>You breach these Terms;</li>
+    <li>Your use of the App poses legal, operational, or safety risks;</li>
+    <li>Your account is found to belong to a user who does not meet the applicable minimum age requirement;</li>
+    <li>We are required to do so by law or a lawful authority;</li>
+    <li>We cease to operate the App.</li>
+</ul>
 <p>
-We do not guarantee uninterrupted or error-free access to the App and may modify, suspend, or
-discontinue features or functionality at any time, without notice.
+Upon termination, your right to use the App immediately ceases. Provisions of these Terms that by
+their nature should survive termination — including Sections 3, 5, 7, 8, 14, 15, 16, and 17 —
+will continue to apply.
 </p>
 </section>
 
 <!-- ============================================================ -->
 <section>
-<h2>11. Limitation of Liability</h2>
+<h2>14. Disclaimer of Warranties</h2>
 <p>
-To the maximum extent permitted by law, Rify and its officers, directors, employees, and agents shall
-not be liable for any direct, indirect, incidental, special, consequential, or punitive damages arising
-from your use of or inability to use the App.
+To the maximum extent permitted by applicable law, the App is provided <strong>"as is"</strong>
+and <strong>"as available"</strong>, without any warranty of any kind, express or implied,
+including but not limited to warranties of merchantability, fitness for a particular purpose,
+title, non-infringement, or uninterrupted or error-free operation.
 </p>
-</section>
-
-<!-- ============================================================ -->
-<section>
-<h2>12. Indemnification</h2>
 <p>
-You agree to indemnify, defend, and hold harmless Rify, its officers, directors, employees, and agents
-from any claims, losses, or liabilities arising from your use of the App, your content, your breach of
-these Terms, or any misrepresentation of your age or eligibility to use the App.
+Rify does not warrant that:
 </p>
+<ul>
+    <li>The App will meet your requirements or expectations;</li>
+    <li>The App will be available at any particular time or from any particular location;</li>
+    <li>Any content, information, or results obtained through the App will be accurate, complete, or reliable;</li>
+    <li>Any errors or defects will be corrected.</li>
+</ul>
+
+<div class="warning-box">
+<strong>Australian Consumer Law:</strong> Nothing in these Terms excludes, restricts, or modifies
+any right or remedy, or any guarantee, warranty, or other term or condition, implied or imposed by
+any law (including the <em>Competition and Consumer Act 2010</em> (Cth)) that cannot lawfully be
+excluded or limited. If such non-excludable rights or remedies apply, Rify limits its liability,
+to the extent permitted by law, to resupplying the relevant services.
+</div>
 </section>
 
 <!-- ============================================================ -->
 <section>
-<h2>13. Changes to These Terms</h2>
+<h2>15. Limitation of Liability</h2>
 <p>
-Rify may update these Terms from time to time. Material changes will be communicated within the App.
-Continued use of the App after updates constitutes acceptance of the revised Terms.
+Subject to Section 14 (Australian Consumer Law), to the maximum extent permitted by law, Rify and
+its officers, directors, employees, and agents shall not be liable for any direct, indirect,
+incidental, special, consequential, or punitive damages arising from:
 </p>
-</section>
-
-<!-- ============================================================ -->
-<section>
-<h2>14. Governing Law &amp; Jurisdiction</h2>
+<ul>
+    <li>Your use of, or inability to use, the App;</li>
+    <li>Any content posted, shared, or transmitted through the App by you or any third party;</li>
+    <li>Any reliance placed on information obtained through the App;</li>
+    <li>Unauthorised access to or alteration of your data;</li>
+    <li>Any bugs, viruses, or other harmful code transmitted through the App;</li>
+    <li>Any loss of data, business, profits, or goodwill arising from your use of the App.</li>
+</ul>
 <p>
-These Terms are governed by and construed in accordance with the laws of the Commonwealth of Australia.
-You agree to submit to the exclusive jurisdiction of the courts of Australia, to the extent permitted
-by applicable local law in your jurisdiction.
+In jurisdictions that do not allow the exclusion or limitation of incidental or consequential
+damages, Rify's liability is limited to the fullest extent permitted by law.
 </p>
 </section>
 
 <!-- ============================================================ -->
 <section>
-<h2>15. Contact</h2>
+<h2>16. Indemnification</h2>
+<p>
+You agree to indemnify, defend, and hold harmless Rify, its officers, directors, employees, agents,
+and licensors from any claims, losses, liabilities, damages, costs, and expenses (including
+reasonable legal fees) arising from or relating to:
+</p>
+<ul>
+    <li>Your use of or access to the App;</li>
+    <li>Content you submit to or share through the App;</li>
+    <li>Your breach of these Terms;</li>
+    <li>Any misrepresentation of your age or eligibility to use the App;</li>
+    <li>Your violation of any applicable law, regulation, or third-party right.</li>
+</ul>
+</section>
+
+<!-- ============================================================ -->
+<section>
+<h2>17. Intellectual Property</h2>
+<p>
+All intellectual property in the App — including the Rify name and logo, app design, interface,
+functionality, seeded Community Request content, and underlying software — is owned by or licensed
+to RIFY PTY LTD and is protected by applicable intellectual property laws.
+</p>
+<p>
+Nothing in these Terms grants you any right, title, or interest in Rify's intellectual property.
+You may not copy, modify, distribute, sell, sublicense, reverse engineer, or create derivative
+works based on the App or any part of it without Rify's prior written consent.
+</p>
+</section>
+
+<!-- ============================================================ -->
+<section>
+<h2>18. Availability</h2>
+<p>
+We do not guarantee uninterrupted or error-free access to the App. We may modify, suspend, or
+discontinue features, functionality, or the App itself at any time, without notice, including for
+maintenance, updates, legal compliance, or business reasons. We are not liable for any interruption
+or discontinuation of the App.
+</p>
+</section>
+
+<!-- ============================================================ -->
+<section>
+<h2>19. Changes to These Terms</h2>
+<p>
+Rify may update these Terms from time to time to reflect changes in the law, our services, or our
+practices.
+</p>
+<p>
+For minor or non-material changes, we will update the "Last updated" date at the top of this
+document. For <strong>material changes</strong> — those that significantly affect your rights or
+obligations — we will notify you within the App and may require your express re-acceptance before
+you can continue using the App.
+</p>
+<p>
+Your continued use of the App after the effective date of any non-material update constitutes
+acceptance of the revised Terms. For material changes, re-consent within the App is required.
+</p>
+</section>
+
+<!-- ============================================================ -->
+<section>
+<h2>20. Governing Law &amp; Jurisdiction</h2>
+<p>
+These Terms are governed by and construed in accordance with the laws of the Commonwealth of
+Australia. You agree to submit to the jurisdiction of the courts of Australia for any dispute
+arising out of or relating to these Terms or your use of the App, to the extent permitted by
+applicable local law in your jurisdiction.
+</p>
+</section>
+
+<!-- ============================================================ -->
+<section>
+<h2>21. Contact</h2>
 <p>
 For questions or concerns regarding these Terms, including any matter relating to age eligibility
 or account deactivation, contact us at:
-<br>
-<strong>Email:</strong> support@rify.com.au
 </p>
+<p><strong>Email:</strong> support@rify.com.au</p>
 </section>
 
 <footer>
